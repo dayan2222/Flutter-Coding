@@ -13,6 +13,25 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text("List View"),
+          actions: <Widget>[
+            IconButton(
+              icon: Icon(Icons.search, color: Colors.white,),
+//              For Event Handling
+              onPressed: (){
+
+              },
+            ),
+
+            IconButton(
+              icon: Icon(Icons.arrow_right, color: Colors.white,),
+//              For Event Handling
+              onPressed: (){
+
+              },
+            ),
+
+          ],
+
         ),
         body: ListView.separated(
           itemCount: articleNames.length,
